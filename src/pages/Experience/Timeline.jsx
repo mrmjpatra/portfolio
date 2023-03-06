@@ -9,15 +9,16 @@ const Timeline = ({ id, courseName, college, board, addrs, mark, year }) => {
         <VerticalTimeline lineColor={'red'} layout={'2-columns'} >
             <VerticalTimelineElement
                 className="vertical-timeline-element--work"
-                date="2010 - 2011"
+                date={year}
                 iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
                 icon={<SchoolIcon />}
                 position={id % 2 == 0 ? 'left' : 'right'}
             >
-                <h3 className="vertical-timeline-element-title">Creative Director</h3>
-                <h4 className="vertical-timeline-element-subtitle">Miami, FL</h4>
+                <h3 className="vertical-timeline-element-title">{courseName}</h3>
+                <h4 className="vertical-timeline-element-subtitle">{college}</h4>
                 <p>
-                    Creative Direction, User Experience, Visual Design, Project Management, Team Leading
+                    Board : {board}<br/>
+                    Mark : {mark}
                 </p>
             </VerticalTimelineElement>
 

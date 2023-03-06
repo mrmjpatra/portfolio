@@ -14,3 +14,12 @@
 .timeline {
     margin-top: 2rem;
 }
+.navbar-container{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 20;
+}
+.experience{
+    margin-top: 3rem;
+}

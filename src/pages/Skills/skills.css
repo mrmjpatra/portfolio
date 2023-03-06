@@ -13,3 +13,19 @@
     gap: 2rem 3rem;
 
 }
+
+@media only screen and (max-width: 414px){
+  
+    .skills{
+        padding: 0 1rem;
+
+    }
+    .skills h1{
+        margin-bottom: 1rem;
+    }
+    .accordion{
+        grid-template-columns: 100%;
+        padding: 0;
+        gap: 1rem 0;
+    }
+}

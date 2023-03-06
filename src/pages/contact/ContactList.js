@@ -8,18 +8,18 @@ export  const contactList=[
         id:1,
         title:"Phone",
         value:'+91 9090323291',
-        icon:"LocalPhoneOutlinedIcon"
+        icon:"LocalPhoneOutlined"
     },
     {
         id:2,
         title:"Mail",
         value:'mrmjpatra@gmail.com',
-        icon:"EmailOutlinedIcon"
+        icon:"EmailOutlined"
     },
     {
         id:3,
         title:"Phone",
         value:'+91 9090323291',
-        icon:"InstagramIcon"
+        icon:"Instagram"
     },
 ]

@@ -1,5 +1,6 @@
-import { Box, Grid, IconButton, Paper, TextField, Typography } from "@mui/material"
+import { Box, Button, Grid, IconButton, Paper, TextField, Typography } from "@mui/material"
 import styled from "@emotion/styled";
+import SendIcon from '@mui/icons-material/Send';
 
 
 const Item = styled(Paper)(({ theme }) => ({
@@ -11,22 +12,28 @@ const Item = styled(Paper)(({ theme }) => ({
 }));
 const ContactMe = () => {
     return (
-        <>
-            <Box>
-                <Grid container spacing={2}>
-                    <Grid item xs={8}>
-                        <TextField id="outlined-basic" label="Outlined" variant="outlined" />
-        
-                   </Grid>
-                    <Grid item xs={8}>
-                        <TextField id="outlined-basic" label="Outlined" variant="outlined" />
-                    </Grid>
-                    <Grid item xs={8}>
-                        <TextField id="outlined-basic" label="Outlined" variant="outlined" />
-                    </Grid>
+        <div className="contactMe">
+            <Grid container spacing={2}  sx={{width:'100%'}}>
+                <Grid item xs={6}>
+                    <TextField sx={{ width: '100%' }} id="outlined-basic" label="First Name" variant="outlined" />
+
                 </Grid>
-            </Box>
-        </>
+                <Grid item xs={6}>
+                    <TextField sx={{ width: '100%' }} id="outlined-basic" label="Last Name" variant="outlined" />
+                </Grid>
+
+                <Grid item xs={12}>
+                    <TextField sx={{ width: '100%' }} id="outlined-basic" label="Email" type={'email'} variant="outlined" />
+                </Grid>
+                <Grid item xs={12}>
+                    <TextField sx={{ width: '100%' }} id="outlined-basic" label="Text..." multiline rows={4} variant="outlined" />
+                </Grid>
+                <Grid item xs={8}>
+                    <Button variant="contained" size="large" endIcon={<SendIcon />}>Send</Button>
+                </Grid>
+            </Grid>
+
+        </div>
     )
 }
 
